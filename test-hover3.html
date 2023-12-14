@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    a {
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    a img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    a img:last-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0;
+      transform: scale(0); 
+    }
+
+    a:hover img:first-child {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    a:hover img:last-child {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="" style="text-decoration: none;">
+    <img src="watch (1).png" class="img-fluid" alt="">
+    <img src="watch (2).png" class="img-fluid" alt="">
+  </a>
+
+</body>
+</html>
